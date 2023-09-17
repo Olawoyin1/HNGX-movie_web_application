@@ -16,7 +16,13 @@ export default function Main({movieList}) {
 
   const Background = `https://image.tmdb.org/t/p/w500${movieList.poster_path}`
   
+  const [search, setSearch] = useState([])
+
+  const getMovieReq = async()=>{
+    const url = `https://api.themoviedb.org/3/discover/movie`
+  }
   return (
+
     <>
       <Swiper
         spaceBetween={30}
@@ -44,7 +50,7 @@ export default function Main({movieList}) {
                     <h3 className='fw-bolder'>MovieBox</h3>
                   </div>
                   <form action="">
-                    <input type="search" name="search" placeholder='What do you want to watch ?' className='form-control' id="" />
+                    <input type="search" name="search" placeholder='What do you want to watch ?' onClick={(e)=>console.log(e.target.value)} className='form-control' id="" />
                   </form>
                   <div className="right">
                     <small>sign up</small>
