@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <header>
         <div className="container">
-            <div className="d-flex align-items-center header justify-content-between">
+            <div className="d-flex flex-wrap align-items-center header justify-content-between">
                 <div className="mail gap-2">
                     <RiMailSendLine />
                     <p>yustee2017@gmail.com</p>

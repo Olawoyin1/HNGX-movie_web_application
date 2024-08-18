@@ -3,21 +3,30 @@ import { VscBriefcase } from "react-icons/vsc";
 
 const Hero = () => {
   return (
-    <div>
-      <p className="line">HEY THERE ! 👋 </p>
-      <h1>
-        I'm <span className="colored">Olawoyin</span> Yusuf
-      </h1>
-      <p className="about">
-        A frontend Dev and a Backend dev with high level of experience in web
-        designing and development. <br />
-        <br /> I care deeply about creating a world class website to my clients,
-        My custom built websiteare fast loading accessible and very easy to
-        manage
-      </p>
-      <a href="#contact_me" className="btn btn-con">
-        View Works  <VscBriefcase />
-      </a>
+    <div className="main">
+      <div className="container2">
+        <div className="row flex-column-reverse flex-lg-row hero m-0">
+          <div className="col-lg-7 d-flex flex-column align-content-lg-start align-items-start gap-2 ">
+            <p className="line">HEY THERE ! 👋 </p>
+            <h1 className="hero-header">I'm <span className="colored">Olawoyin</span> Yusuf</h1>
+            <div className="stack d-flex gap-2 align-items-center">
+                <p className="long-line"></p>
+                <h4>Software Engineer </h4>
+            </div>
+            <p className="text-muted my-2">I design, develop, and maintain software applications. My role involves writing code in various programming languages, solving complex problems, and collaborating with teams to deliver functional software that meets user or business needs</p>
+    
+            <a href="#contact_me" className="works">
+                <p>View Works</p>
+                <VscBriefcase size={20} />
+            </a>
+          </div>
+          <div className="col-lg-5 hero-img p-4">
+            <div className="hero-image p-1 mx-auto">
+                <img src="../../Images/me.png" className='img-fluid shadow-sm border' alt="myself" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
