@@ -13,7 +13,11 @@
   text-decoration: none !important;
 }
 
-h1,h2,h3,h4,h5,span,strong{
+small{
+  font-size: 12px !important;
+}
+
+h1,h2,h3,h4,h5,h6,strong,small{
   margin: 0 !important;
 
 }
@@ -25,6 +29,7 @@ h1,h2,h3,h4,h5,span,strong{
 
 body{
   color: #333333;
+  background-color: #FAFAFA !important;
 }
 
 img{
@@ -111,6 +116,7 @@ a {
   display: flex;
   align-items: center;
   gap: 14px;
+  display: inline-flex;
 }
 
 .hero-img{
@@ -129,6 +135,7 @@ a {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  border-radius: 50%;
 }
 
 .hero-image img{
@@ -136,6 +143,10 @@ a {
   border-radius: 50%;
 }
 
+
+.about-header h2{
+  font-weight: bold;
+}
 
 @media (max-width: 967px) {
   .long-line{

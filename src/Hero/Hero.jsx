@@ -21,8 +21,8 @@ const Hero = () => {
             </a>
           </div>
           <div className="col-lg-5 hero-img p-4">
-            <div className="hero-image p-1 mx-auto">
-                <img src="../../Images/me.png" className='img-fluid shadow-sm border' alt="myself" />
+            <div className="hero-image p-1 bg-white shadow-sm mx-auto">
+                <img src="../../Images/me.png" className='img-fluid shadow' alt="myself" />
             </div>
           </div>
         </div>
