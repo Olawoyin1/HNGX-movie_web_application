@@ -1,6 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Raleway:wght@400;800&display=swap');
 
 
+*{
+  /* border: 1px solid red; */
+  box-sizing: border-box !important; 
+  padding: 0 !important;
+}
+
+
+
+
+form{
+  width: 400px;
+  max-width: 100%;
+  object-fit: contain;
+  /* background-color: red; */
+  /* display: inline-block; */
+  margin: 0 auto;
+  padding: 1rem !important ;
+
+}
+
+div{
+ /* overflow: hidden; */
+}
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+  outline: none !important;
+  /* max-width: 100; */
+  max-width: 100%;
+  font-size: 13px !important;
+  padding: 0.7rem !important;
+}
+
+input:focus{
+  outline: none !important;
+}
 
 body {
     font-family: 'Montserrat', sans-serif !important;
@@ -8,13 +47,10 @@ body {
 }
 
 img{
-    /* width: 100%; */
     object-fit: cover;
 }
 
-*{
-    /* border: 1px solid red; */
-}
+
 
 .swiper {
     width: 100%;
@@ -67,4 +103,10 @@ img{
     font-size: 0.9rem;
     width: 500px;
     
+  }
+
+
+  .form-control:focus {
+    border-color: #FF0000 !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
   }
