@@ -29,7 +29,7 @@ const Contact = () => {
                         <FaWhatsapp size={20}/>   
                         <h6 className='text-bold'>Whatsapp</h6>
                         <small>+234-816-802-8145</small>
-                        <small><a href="https://api.whatsapp.com/send?phone=8168028145&text=Hello,%20this%20is%20Olawoyin.%20I%E2%80%99d%20be%20delighted%20to%20connect%20with%20you%20and%20offer%20my%20expertise.%20May%20I%20know%20your%20name%20and%20how%20I%20can%20best%20assist%20you%20with%20my%20skills?">Write Me <IoIosArrowRoundForward /></a></small>
+                        <small><a href="HTTPS://wa.me/2348168028145">Write Me <IoIosArrowRoundForward /></a></small>
                     </div>
                 </div>
                 <div className="col-lg-6 p-lg-5">
