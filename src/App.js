@@ -7,6 +7,7 @@ import About from './About/About.jsx';
 import Portfolio from './Portfolio/Portfolio.jsx';
 import Skills from './Skill/Skills.jsx';
 import Contact from './Contact/Contact.jsx';
+import Footer from './Footer/Footer.jsx';
 
 
 
@@ -20,6 +21,7 @@ function App() {
       <Skills />
       <Portfolio />
       <Contact />
+      <Footer />
     </>
    
   );

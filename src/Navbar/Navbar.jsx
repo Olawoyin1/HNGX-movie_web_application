@@ -3,18 +3,19 @@ import { RiMailSendLine } from "react-icons/ri";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { FaXTwitter } from "react-icons/fa6";
 import { VscGithubAlt } from "react-icons/vsc";
+import { RiMenu3Line } from "react-icons/ri";
 
 const Navbar = () => {
   return (
     <header>
         <div className="container2">
             <div className="d-flex flex-wrap align-items-center header justify-content-between">
-                <div className="mail gap-2">
+                <a href='mailto:yustee2017@gmail.com' className="mail gap-2">
                     <RiMailSendLine />
                     <p>yustee2017@gmail.com</p>
-                </div>
+                </a>
                 
-                <div className="mail links">
+                <div className="d-none d-lg-flex mail links">
                     <ul className='d-flex gap-4 m-0'>
                         <li className='nav-item'>
                             <a className='nav-link' href="#home">Home</a>
@@ -33,17 +34,18 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="mail gap-3">
-                    <a href="#github">
+                <div className="d-none d-lg-flex mail gap-3">
+                    <a href="https://github.com/olawoyin1">
                         <VscGithubAlt />
                     </a>
-                    <a href="#twitter">
+                    <a href="https://x.com/OlawoyinGbolah3">
                         <FaXTwitter />
                     </a>
-                    <a href="#linkedin">
+                    <a href="https://www.linkedin.com/in/olawoyin1/">
                         <SlSocialLinkedin />
                     </a>
                 </div>
+                <RiMenu3Line className='d-flex d-lg-none' />
             </div>
         </div>
     </header>
