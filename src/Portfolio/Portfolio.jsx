@@ -5,9 +5,10 @@ import Skills from './data';
 const Portfolio = () => {
 
     const frontend = Skills.filter(item => item.stack === 'frontend');
+    const backend = Skills.filter(item => item.stack === 'backend');
+    const devops = Skills.filter(item => item.stack === 'devOps');
 
 
-    console.log(frontend)
 
   return (
     <div className='portfolio py-4'>
@@ -16,8 +17,10 @@ const Portfolio = () => {
                 <h2 className="text-bold">Skills</h2>
                 <p className="about-text text-muted">My Technical Level</p>
             </div>
-            <div className="skills row row-cols-1 row-cols-sm-2 m-0 gap-4">
-                <div className="item col p-2 bg-white">
+            <div className="skills  m-0 ">
+
+                {/* =========== FRONTEND STACK STARTS HERE ============ */}
+                <div className="item p-2 bg-white">
                     <h6 className='text-center py-3'>Frontend Developer</h6>
                     
                     <div className="stack-skills mx-auto row m-0">
@@ -36,7 +39,56 @@ const Portfolio = () => {
                     }
                     </div>
                 </div>
+                {/* =========== FRONTEND STACK ENDS HERE ============ */}
                 
+
+                {/* =========== BACKEND STACK STARTS HERE ============ */}
+                <div className="item  p-2 bg-white">
+                    <h6 className='text-center py-3'>Backend Developer</h6>
+                    
+                    <div className="stack-skills mx-auto row m-0">
+                    {
+                        backend.map((item) => {
+                            return(
+                                <div className="col-6 p-2 d-flex align-items-start justify-content-start gap-2">
+                                    <GoVerified className='mt-1' />
+                                    <div className="d-flex  flex-column gap-1">
+                                        <p className='fw-bold'>{item.skill}</p>
+                                        <small className="text-muted">{item.level}</small>
+                                    </div>
+                                </div>    
+                            )
+                        })
+                    }
+                    </div>
+                </div>
+                {/* =========== BACKEND STACK ENDS HERE ============ */}
+
+                {/* =========== BACKEND STACK STARTS HERE ============ */}
+                <div className="item p-2 bg-white">
+                    <h6 className='text-center py-3'>System Engineering & DevOps</h6>
+                    
+                    <div className="stack-skills mx-auto row m-0">
+                    {
+                        devops.map((item) => {
+                            return(
+                                <div className="col-6 p-2 d-flex align-items-start justify-content-start gap-2">
+                                    <GoVerified className='mt-1' />
+                                    <div className="d-flex  flex-column gap-1">
+                                        <p className='fw-bold'>{item.skill}</p>
+                                        <small className="text-muted">{item.level}</small>
+                                    </div>
+                                </div>    
+                            )
+                        })
+                    }
+                    </div>
+                </div>
+                {/* =========== BACKEND STACK ENDS HERE ============ */}
+
+
+
+
 
             </div>
         </div>

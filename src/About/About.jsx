@@ -21,18 +21,18 @@ const About = () => {
                     </div>
                 </div>
                 <div className="col-lg-6 p-lg-2 mt-3 mt-lg-0">
-                    <div className="row gap-3 m-0">
-                        <div className="col rounded shadow-sm bg-white text-center d-flex flex-column align-items-center justify-content-center gap-2 p-3">
+                    <div className="grid gap-2 gap-lg-3 m-0">
+                        <div className="rounded shadow-sm bg-white text-center d-flex flex-column align-items-center justify-content-center gap-2 p-2 p-lg-3">
                             <LuAward size={24} />
                             <h6 className='text-bold'>Experience</h6>
                             <small className='text-muted'>3 Years Working</small>
                         </div>
-                        <div className="col rounded shadow-sm bg-white text-center d-flex flex-column align-items-center justify-content-center gap-2 p-3">
+                        <div className="rounded shadow-sm bg-white text-center d-flex flex-column align-items-center justify-content-center gap-2 p-2 p-lg-3">
                             <VscBriefcase size={24} />
                             <h6 className='text-bold'>Completed</h6>
                             <small className='text-muted'>20+ Project</small>
                         </div>
-                        <div className="col rounded shadow-sm bg-white text-center d-flex flex-column align-items-center justify-content-center gap-2 p-3">
+                        <div className="rounded shadow-sm bg-white text-center d-flex flex-column align-items-center justify-content-center gap-2 p-2 p-lg-3">
                             <BiSupport size={24} />
                             <h6 className='text-bold'>Support</h6>
                             <small className='text-muted'>Online 24/7</small>

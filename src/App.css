@@ -159,8 +159,23 @@ a {
 
 .item{
   border-radius: 1rem;
+  min-height: 400px;
 
 }
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  /* gap: 1rem; */
+}
+
+
 
 @media (max-width: 967px) {
   .long-line{
@@ -179,3 +194,4 @@ a {
     overflow: hidden !important;
   }
 }
+

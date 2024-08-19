@@ -62,6 +62,97 @@ const stack = [
         stack: "frontend",
         
     },
+    {
+        id: 10,
+        level: 'Intermediate',
+        skill: "Bash",
+        stack: "devOps",
+        
+    },
+    {
+        id: 10,
+        level: 'Intermediate',
+        skill: "Network",
+        stack: "devOps",
+        
+    },
+    {
+        id: 10,
+        level: 'Intermediate',
+        skill: "Scripting",
+        stack: "devOps",
+        
+    },
+    {
+        id: 10,
+        level: 'Intermediate',
+        skill: "WebStack",
+        stack: "devOps",
+        
+    },
+    {
+        id: 10,
+        level: 'Intermediate',
+        skill: "Security",
+        stack: "devOps",
+        
+    },
+    {
+        id: 10,
+        level: 'Intermediate',
+        skill: "PowerShell",
+        stack: "devOps",
+        
+    },
+    {
+        id: 10,
+        level: 'Intermediate',
+        skill: "Python",
+        stack: "backend",
+        
+    },
+    {
+        id: 10,
+        level: 'Intermediate',
+        skill: "Node Js",
+        stack: "backend",
+        
+    },
+    {
+        id: 10,
+        level: 'Intermediate',
+        skill: "Django",
+        stack: "backend",
+        
+    },
+    {
+        id: 10,
+        level: 'Intermediate',
+        skill: "Flask",
+        stack: "backend",
+        
+    },
+    {
+        id: 10,
+        level: 'Intermediate',
+        skill: "My SQL",
+        stack: "backend",
+        
+    },
+    {
+        id: 10,
+        level: 'Intermediate',
+        skill: "Mongo DB",
+        stack: "backend",
+        
+    },
+    {
+        id: 10,
+        level: 'Intermediate',
+        skill: "C",
+        stack: "devOps",
+        
+    },
 ];
 
 export default stack
