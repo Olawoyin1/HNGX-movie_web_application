@@ -23,7 +23,7 @@ const Contact = () => {
                         <RiMailSendLine size={20} />    
                         <h6 className='text-bold'>Email</h6>
                         <small>yustee2017@gmail.com</small>
-                        <small><a href="#wr">Write Me <IoIosArrowRoundForward /></a></small>
+                        <small><a href="mailto:yustee2017@gmail.com">Write Me <IoIosArrowRoundForward /></a></small>
                     </div>
                     <div className="rounded shadow-sm bg-white text-center d-flex flex-column align-items-center justify-content-center gap-2 p-2 p-lg-3">
                         <FaWhatsapp size={20}/>   
