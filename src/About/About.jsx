@@ -41,7 +41,7 @@ const About = () => {
                     <div className="me my-4">
                         <p className='lead'>My name is Olawoyin Yusuf, and for the past 3 years, I’ve dedicated myself to the craft of software engineering. My passion lies in building software that not only meets the needs of users but also exceeds their expectations. I’m skilled in technologies like React.js, C Programming, TypeScript, Python,  and GraphQL APIs, which have enabled me to work on a variety of projects, each with its unique challenges and learning opportunities. I enjoy being part of a team where collaboration and continuous improvement are the norms, as I believe that’s where the best ideas and solutions come from. I’m excited to find a new opportunity where I can apply my skills, learn new things, and help create software that truly makes a difference.</p>
                     </div>
-                    <a href="#contact_me" className="works">
+                    <a href="../../Images/Olawoyin Resume.pdf" className="works">
                         <p>Download CV</p>
                         <FiFileText size={20} />
                     </a>

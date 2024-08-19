@@ -15,7 +15,7 @@ const Hero = () => {
             </div>
             <p className="text-muted my-2">I design, develop, and maintain software applications. My role involves writing code in various programming languages, solving complex problems, and collaborating with teams to deliver functional software that meets user or business needs</p>
     
-            <a href="#contact_me" className="works">
+            <a href="#portfolio" className="works">
                 <p>View Works</p>
                 <VscBriefcase size={20} />
             </a>

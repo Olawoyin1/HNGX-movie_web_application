@@ -6,6 +6,7 @@ import Hero from './Hero/Hero.jsx';
 import About from './About/About.jsx';
 import Portfolio from './Portfolio/Portfolio.jsx';
 import Skills from './Skill/Skills.jsx';
+import Contact from './Contact/Contact.jsx';
 
 
 
@@ -18,6 +19,7 @@ function App() {
       <About />
       <Skills />
       <Portfolio />
+      <Contact />
     </>
    
   );

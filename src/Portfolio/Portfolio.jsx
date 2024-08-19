@@ -3,7 +3,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 const Portfolio = () => {
   return (
-    <div className='py-4'>
+    <div className='py-4' id='portfolio'>
       <div className="container2">
             <div className="sec-header mb-4 text-center ">
               <h2 className="text-bold">Portfolio</h2>

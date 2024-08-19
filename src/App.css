@@ -11,6 +11,15 @@
   font-family: 'Poppins';
   list-style-type: none;
   text-decoration: none !important;
+  scroll-behavior: smooth;
+}
+
+
+
+button{
+  border: none !important;
+  outline: none !important;
+  cursor: pointer !important;
 }
 
 small{
@@ -182,6 +191,29 @@ a {
   /* gap: 1rem; */
 }
 
+
+.contact-form input, textarea {
+  border: 1px solid #333333;
+  border-radius: 1rem;
+  outline: none;
+  padding: 1rem !important;
+  display: block;
+  width: 100%;
+  background: transparent;
+  font-size: 14px ;
+  font-family: 'Montserrat';
+}
+
+textarea::placeholder {
+  font-size: 14px !important;
+  font-family: 'Montserrat';
+}
+
+textarea{
+  height: 100px;
+  resize: none;
+
+}
 
 
 @media (max-width: 967px) {
