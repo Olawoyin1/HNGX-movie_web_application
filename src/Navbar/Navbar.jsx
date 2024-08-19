@@ -7,7 +7,7 @@ import { VscGithubAlt } from "react-icons/vsc";
 const Navbar = () => {
   return (
     <header>
-        <div className="container">
+        <div className="container2">
             <div className="d-flex flex-wrap align-items-center header justify-content-between">
                 <div className="mail gap-2">
                     <RiMailSendLine />

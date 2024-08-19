@@ -5,7 +5,7 @@
 
 
 *{
-  /* border: 1px solid red; */
+  border: 1px  solid red;
   box-sizing: border-box !important; 
   padding: 0 !important;
   font-family: 'Poppins';
@@ -144,8 +144,22 @@ a {
 }
 
 
-.about-header h2{
+.sec-header h2{
   font-weight: bold;
+}
+
+
+.about-img{
+  object-fit: contain;
+  height: fit-content;
+  border-radius: 1rem;
+  overflow: hidden !important;
+}
+
+
+.item{
+  border-radius: 1rem;
+
 }
 
 @media (max-width: 967px) {
@@ -156,5 +170,12 @@ a {
   .container2{
     width: 90%;
     
+  }
+
+  .about-img{
+    object-fit: contain;
+    height: fit-content;
+    border-radius: 1rem;
+    overflow: hidden !important;
   }
 }
