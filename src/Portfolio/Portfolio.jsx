@@ -1,97 +1,57 @@
 import React from 'react'
-import { GoVerified } from "react-icons/go";
-import Skills from './data';
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 const Portfolio = () => {
-
-    const frontend = Skills.filter(item => item.stack === 'frontend');
-    const backend = Skills.filter(item => item.stack === 'backend');
-    const devops = Skills.filter(item => item.stack === 'devOps');
-
-
-
   return (
-    <div className='portfolio py-4'>
-        <div className="container2">
-            <div className="sec-header text-center mb-4">
-                <h2 className="text-bold">Skills</h2>
-                <p className="about-text text-muted">My Technical Level</p>
+    <div className='py-4'>
+      <div className="container2">
+            <div className="sec-header mb-4 text-center ">
+              <h2 className="text-bold">Portfolio</h2>
+              <p className="about-text text-muted">My Recent Works</p>
             </div>
-            <div className="skills  m-0 ">
+            <div className="grid1   m-0 ">
 
-                {/* =========== FRONTEND STACK STARTS HERE ============ */}
-                <div className="item p-2 bg-white">
-                    <h6 className='text-center py-3'>Frontend Developer</h6>
-                    
-                    <div className="stack-skills mx-auto row m-0">
-                    {
-                        frontend.map((item) => {
-                            return(
-                                <div className="col-6 p-2 d-flex align-items-start justify-content-start gap-2">
-                                    <GoVerified className='mt-1' />
-                                    <div className="d-flex  flex-column gap-1">
-                                        <p className='fw-bold'>{item.skill}</p>
-                                        <small className="text-muted">{item.level}</small>
-                                    </div>
-                                </div>    
-                            )
-                        })
-                    }
-                    </div>
+
+              <div className='item2 bg-white shadow-sm'>
+                <div className="image">
+                  <img src="../../Images/Redmi1.jpeg" alt="" />
                 </div>
-                {/* =========== FRONTEND STACK ENDS HERE ============ */}
-                
-
-                {/* =========== BACKEND STACK STARTS HERE ============ */}
-                <div className="item  p-2 bg-white">
-                    <h6 className='text-center py-3'>Backend Developer</h6>
-                    
-                    <div className="stack-skills mx-auto row m-0">
-                    {
-                        backend.map((item) => {
-                            return(
-                                <div className="col-6 p-2 d-flex align-items-start justify-content-start gap-2">
-                                    <GoVerified className='mt-1' />
-                                    <div className="d-flex  flex-column gap-1">
-                                        <p className='fw-bold'>{item.skill}</p>
-                                        <small className="text-muted">{item.level}</small>
-                                    </div>
-                                </div>    
-                            )
-                        })
-                    }
-                    </div>
+                <div className="port-content d-flex flex-column gap-2 p-3">
+                  <h6 className='fw-bold'>Redmi Note 9s Control Panel</h6>
+                  <small  className='text-muted'>Lorem ipsum,iam aliquid sit fugit quibusdam, nihil distinctio id! Quibusdam?</small>
+                  <a href="#view">View <IoIosArrowRoundForward /></a>
                 </div>
-                {/* =========== BACKEND STACK ENDS HERE ============ */}
+              </div>
 
-                {/* =========== BACKEND STACK STARTS HERE ============ */}
-                <div className="item p-2 bg-white">
-                    <h6 className='text-center py-3'>System Engineering & DevOps</h6>
-                    
-                    <div className="stack-skills mx-auto row m-0">
-                    {
-                        devops.map((item) => {
-                            return(
-                                <div className="col-6 p-2 d-flex align-items-start justify-content-start gap-2">
-                                    <GoVerified className='mt-1' />
-                                    <div className="d-flex  flex-column gap-1">
-                                        <p className='fw-bold'>{item.skill}</p>
-                                        <small className="text-muted">{item.level}</small>
-                                    </div>
-                                </div>    
-                            )
-                        })
-                    }
-                    </div>
+              <div className='item2 bg-white shadow-sm'>
+                <div className="image">
+                  <img src="../../Images/signup.png" alt="" />
                 </div>
-                {/* =========== BACKEND STACK ENDS HERE ============ */}
+                <div className="port-content d-flex flex-column gap-2 p-3">
+                  <h6 className='fw-bold'>Redmi Note 9s Control Panel</h6>
+                  <small  className='text-muted'>Lorem ipsum,iam aliquid sit fugit quibusdam, nihil distinctio id! Quibusdam?</small>
+                  <a href="#view">View <IoIosArrowRoundForward /></a>
+                </div>
+              </div>
+
+              <div className='item2 bg-white shadow-sm'>
+                <div className="image">
+                  <img src="../../Images/signup2.png" alt="" />
+                </div>
+                <div className="port-content d-flex flex-column gap-2 p-3">
+                  <h6 className='fw-bold'>Redmi Note 9s Control Panel</h6>
+                  <small  className='text-muted'>Lorem ipsum,iam aliquid sit fugit quibusdam, nihil distinctio id! Quibusdam?</small>
+                  <a href="#view">View <IoIosArrowRoundForward /></a>
+                </div>
+              </div>
 
 
+              
 
 
 
             </div>
-        </div>
+      </div>
     </div>
   )
 }

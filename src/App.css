@@ -163,7 +163,14 @@ a {
 
 }
 
-.skills {
+.item2{
+  border-radius: 1rem;
+  min-height: 290px;
+  overflow: hidden;
+
+}
+
+.grid1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1rem;

@@ -5,6 +5,8 @@ import Navbar from './Navbar/Navbar.jsx';
 import Hero from './Hero/Hero.jsx';
 import About from './About/About.jsx';
 import Portfolio from './Portfolio/Portfolio.jsx';
+import Skills from './Skill/Skills.jsx';
+
 
 
 
@@ -14,6 +16,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Skills />
       <Portfolio />
     </>
    
