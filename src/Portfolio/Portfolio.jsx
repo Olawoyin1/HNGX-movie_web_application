@@ -30,7 +30,7 @@ const Portfolio = () => {
                       <div className="port-content d-flex flex-column gap-2 p-3">
                         <h6 className='fw-bold'>{item.name}</h6>
                         <small  className='text-muted'>{item.desc}</small>
-                        <a href="#view">View <IoIosArrowRoundForward /></a>
+                        <a href={item.link}>View <IoIosArrowRoundForward /></a>
                       </div>
                     </div>
                   )
