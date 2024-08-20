@@ -211,9 +211,15 @@ a {
 
 .item2{
   border-radius: 1rem;
-  min-height: 290px;
+  /* height: 300px; */
   overflow: hidden;
 
+}
+
+.item2 .image {
+  height: 154px;
+  object-fit: contain;
+  overflow: hidden;
 }
 
 .grid1 {
