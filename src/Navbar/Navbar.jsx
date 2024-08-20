@@ -4,10 +4,17 @@ import { SlSocialLinkedin } from "react-icons/sl";
 import { FaXTwitter } from "react-icons/fa6";
 import { VscGithubAlt } from "react-icons/vsc";
 import { RiMenu3Line } from "react-icons/ri";
+import { MdOutlineDarkMode } from "react-icons/md";
+import { MdOutlineLightMode } from "react-icons/md";
 
-const Navbar = () => {
+const Navbar = ({handleToggle, toggle, styles}) => {
+    
+    
+    
+
+    
   return (
-    <header>
+    <header style={styles}>
         <div className="container2">
             <div className="d-flex flex-wrap align-items-center header justify-content-between">
                 <a href='mailto:yustee2017@gmail.com' className="mail gap-2">
@@ -44,8 +51,20 @@ const Navbar = () => {
                     <a href="https://www.linkedin.com/in/olawoyin1/">
                         <SlSocialLinkedin />
                     </a>
+                    <a href="#li" onClick={handleToggle}>
+
+                        {
+                            toggle ? <MdOutlineLightMode /> : <MdOutlineDarkMode />
+                        }
+                    </a>
                 </div>
-                <RiMenu3Line className='d-flex d-lg-none' />
+                <a href="#li" className='d-flex d-lg-none' onClick={handleToggle}>
+
+                    {
+                        toggle ? <MdOutlineLightMode /> : <MdOutlineDarkMode />
+                    }
+                </a>
+                {/* <RiMenu3Line className='d-flex d-lg-none' /> */}
             </div>
         </div>
     </header>
