@@ -8,6 +8,87 @@ const Project = [
         language: ""
         
     },
+    {
+        id: 1,
+        name: "Manage Landing Page",
+        link : "https://fm-managelandingpage.netlify.app/",
+        image: "../../Images/manage.jpeg",
+        desc: "Frontend Mentor Challenge | Manage Landing Page",
+        language: ""
+        
+    },
+    {
+        id: 1,
+        name: "Todo Application Landing Page",
+        link : "https://alxtodo.netlify.app/",
+        image: "../../Images/tdpage.jpeg",
+        desc: "ALx SE Portfolio Project | Todo Application Landing Page",
+        language: ""
+        
+    },
+    {
+        id: 1,
+        name: "Portfolio Website",
+        link : "https://olawoyin1.netlify.app/",
+        image: "../../Images/portfolio.png",
+        desc: "Portfolio Website created with React.js and framer Motion",
+        language: ""
+        
+    },
+    {
+        id: 1,
+        name: "U-Secured Landing Page",
+        link : "https://u-secured.netlify.app/",
+        image: "../../Images/u-secured.png",
+        desc: "Safety tech web application.",
+        language: ""
+        
+    },
+    {
+        id: 1,
+        name: "Todo Application",
+        link : "https://redmi9s.netlify.app/",
+        image: "../../Images/tdapp.jpeg",
+        desc: "ALx SE Portfolio Project | Todo Application",
+        language: ""
+        
+    },
+    {
+        id: 1,
+        name: "Wedo Sms",
+        link : "https://wedosms.netlify.app/",
+        image: "../../Images/wedo-sms.jpeg",
+        desc: "SMS Marketing software that allows you to create SMS marketing campaigns",
+        language: ""
+        
+    },
+    {
+        id: 1,
+        name: "Classic Royals FA",
+        link : "https://classic-royals.netlify.app/",
+        image: "../../Images/crfa.jpeg",
+        desc: "Classic Royals Football Academy Official Website",
+        language: ""
+        
+    },
+    {
+        id: 1,
+        name: "EasyBank landing Page",
+        link : "https://fmbanklandingpage.netlify.app/",
+        image: "../../Images/bank.jpeg",
+        desc: "Frontend Mentor Challenge | EasyBank landing Page",
+        language: ""
+        
+    },
+    {
+        id: 1,
+        name: "Netflix Clone",
+        link : "https://nclone22.netlify.app/",
+        image: "../../Images/nclone.jpeg",
+        desc: "Netflix clone website created with HTML CSS and Javascript",
+        language: ""
+        
+    },
 
     {
         id: 2,
@@ -53,7 +134,7 @@ const Project = [
         id: 7,
         name: "Sign up form + Validation",
         link : "https://user-reg-validation.netlify.app/",
-        image: "../../Images/Form.png",
+        image: "../../Images/signup2.png",
         desc: "User registration with Form validation using Javascript",
         language: ""
     },
@@ -71,15 +152,6 @@ const Project = [
         link : "https://olawoyin-modal.netlify.app/",
         image: "../../Images/Modal.png",
         desc: "Modal Popup | UI element that appears in the foreground of a website",
-        price: "$1,200.00",
-        language: ""
-    },
-    {
-        id: 10,
-        name: "U-secured web",
-        link : "Action",
-        image: "../../Images/U-secured.png",
-        desc: "Safety tech web application.",
         language: ""
     },
     {

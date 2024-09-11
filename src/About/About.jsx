@@ -4,8 +4,74 @@ import { VscBriefcase } from "react-icons/vsc";
 import { FiFileText } from "react-icons/fi";
 import { BiSupport } from "react-icons/bi";
 import { LuAward } from "react-icons/lu";
+import { animate, motion, delay } from 'framer-motion/dom';
 
 const About = () => {
+
+
+    const mainVariant = {
+        initial : {
+          // x : width > 0 ? -100 : "0",
+          x : -100,
+          opacity : 0
+        },
+        animate : {
+          opacity : 1,
+          x: 0,
+          transition : {
+            duration: 0.5,
+            staggerChildren : 0.7
+          } , 
+        }
+      }
+  
+      const transition = { duration: 0.5, ease: "easeInOut", type : "tween" };
+
+      const bigVar = {
+        initial : {
+          // x : width > 0 ? -100 : "0",
+          x : -100,
+          opacity : 0
+        },
+        animate : {
+          opacity : 1,
+          x: 0,
+          transition
+        }
+      }
+
+      const aboutVariant = {
+
+        initial : {
+          x : 100,
+          opacity : 0
+        },
+        animate : {
+          x : 0,
+          opacity : 1,
+          // rotate : [0 , 45 , -45, 0],
+          // transition 
+          transition : {
+            duration: 0.5,
+            staggerChildren : 1
+          } , 
+        }
+      }
+
+      const slideIn = {
+
+        initial : {
+          x : 100,
+          opacity : 0
+        },
+        animate : {
+          x : 0,
+          opacity : 1,
+          transition
+        }
+      }
+
+
   return (
     <div className='about-section py-4'>
         <div className="container2">
@@ -39,7 +105,8 @@ const About = () => {
                         </div>
                     </div>
                     <div className="me my-4">
-                        <p className='lead'>My name is Olawoyin Yusuf, and for the past 3 years, I’ve dedicated myself to the craft of software engineering. My passion lies in building software that not only meets the needs of users but also exceeds their expectations. I’m skilled in technologies like React.js, C Programming, TypeScript, Python, and APIs, which have enabled me to work on a variety of projects, each with its unique challenges and learning opportunities. I enjoy being part of a team where collaboration and continuous improvement are the norms, as I believe that’s where the best ideas and solutions come from. I’m excited to find a new opportunity where I can apply my skills, learn new things, and help create software that truly makes a difference.</p>
+                        <p className='lead'>My name is Olawoyin Yusuf, and for the past 3 years, I’ve dedicated myself to the craft of software engineering. My passion lies in building software that not only meets the needs of users but also exceeds their expectations.  <br /><br />
+                            I’m skilled in technologies like React.js, C Programming, TypeScript, Python, and APIs, which have enabled me to work on a variety of projects, each with its unique challenges and learning opportunities. I enjoy being part of a team where collaboration and continuous improvement are the norms, as I believe that’s where the best ideas and solutions come from. I’m excited to find a new opportunity where I can apply my skills, learn new things, and help create software that truly makes a difference.</p>
                     </div>
                     <a href="../../Images/Olawoyin Resume.pdf" className="works">
                         <p>Download CV</p>

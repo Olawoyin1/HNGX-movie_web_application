@@ -6,6 +6,8 @@ import { VscGithubAlt } from "react-icons/vsc";
 import { RiMenu3Line } from "react-icons/ri";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { MdOutlineLightMode } from "react-icons/md";
+import { SiUpwork } from "react-icons/si";
+
 
 const Navbar = ({handleToggle, toggle, styles}) => {
     
@@ -50,6 +52,9 @@ const Navbar = ({handleToggle, toggle, styles}) => {
                     </a>
                     <a href="https://www.linkedin.com/in/olawoyin1/">
                         <SlSocialLinkedin />
+                    </a>
+                    <a href="https://www.upwork.com/freelancers/~01c582f3f3e721b2c9">
+                        <SiUpwork />
                     </a>
                     <a href="#li" onClick={handleToggle}>
 
