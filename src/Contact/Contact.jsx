@@ -3,8 +3,61 @@ import { RiMailSendLine } from "react-icons/ri";
 import { FaWhatsapp } from "react-icons/fa";
 import { VscSend } from "react-icons/vsc";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { motion } from 'framer-motion';
 
 const Contact = () => {
+
+    const contactVar = {
+        initial : {
+            // x : width > 0 ? -100 : "0",
+            x : -100,
+            opacity : 0
+          },
+          animate : {
+            opacity : 1,
+            x: 0,
+            transition : {
+              duration: 0.5,
+              staggerChildren : 0.7,
+              when : "beforeChildren",
+            } , 
+        }
+    }
+
+    const leftVar = {
+        initial : {
+            x : -100,
+            opacity : 0
+          },
+          animate : {
+            opacity : 1,
+            x: 0,
+            transition : {
+              duration: 0.5,
+              
+            //   staggerChildren : 0.7
+            } , 
+        }
+    }
+   
+    const rightVar = {
+        initial : {
+            x : 100,
+            opacity : 0
+          },
+          animate : {
+            opacity : 1,
+            x: 0,
+            transition : {
+              duration: 0.5,
+              
+            //   staggerChildren : 0.7
+            } , 
+        }
+    }
+
+
+
 
     const [formData, setFormData] = useState({
         name : "",
@@ -37,8 +90,13 @@ const Contact = () => {
               <p className="about-text text-muted">Contact Me</p>
             </div>
 
-            <div className="row m-0">
-                <div className="col-lg-6 p-lg-5">
+            <motion.div 
+                className="row m-0"
+                variants={contactVar}
+                initial="initial"
+                whileInView="animate"
+            >
+                <motion.div variants={leftVar} className="col-lg-6 p-lg-5">
                     <div className="sec-header py-4 text-center">
                         <h6 className='fw-bold'>Talk To Me</h6>
                     </div>
@@ -54,8 +112,8 @@ const Contact = () => {
                         <small>+234-816-802-8145</small>
                         <a className='text-muted' href="HTTPS://wa.me/2348168028145">Write Me <IoIosArrowRoundForward /></a>
                     </div>
-                </div>
-                <div className="col-lg-6 p-lg-5">
+                </motion.div>
+                <motion.div variants={rightVar} className="col-lg-6 p-lg-5">
                     <div className="sec-header py-4 text-center">
                         <h6 className='fw-bold'>Write Me Your Project</h6>
                     </div>
@@ -91,8 +149,8 @@ const Contact = () => {
                         
                         </button>
                     </form>
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         </div>
     </div>
   )

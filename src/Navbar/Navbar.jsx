@@ -7,12 +7,44 @@ import { RiMenu3Line } from "react-icons/ri";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { MdOutlineLightMode } from "react-icons/md";
 import { SiUpwork } from "react-icons/si";
-
+import { motion } from 'framer-motion';
 
 const Navbar = ({handleToggle, toggle, styles}) => {
     
     
-    
+    const IconVariants = {
+        initial : {
+            // x : width > 0 ? -100 : "0",
+            y : -100,
+            opacity : 0
+          },
+          animate : {
+            opacity : 1,
+            y: 0,
+            transition : {
+              duration: 0.5,
+              staggerChildren : 0.7,
+              when : "beforeChildren",
+            } , 
+        }
+    }
+
+    const childVariants = {
+        initial : {
+            // x : width > 0 ? -100 : "0",
+            y : -100,
+            opacity : 0
+          },
+          animate : {
+            opacity : 1,
+            y: 0,
+            transition : {
+              duration: 0.5,
+              
+            //   staggerChildren : 0.7
+            } , 
+        }
+    }
 
     
   return (
@@ -43,26 +75,31 @@ const Navbar = ({handleToggle, toggle, styles}) => {
                         </li>
                     </ul>
                 </div>
-                <div className="d-none d-lg-flex mail gap-3">
+                <motion.div
+                    className="d-none d-lg-flex mail gap-3"
+                    variants={IconVariants}
+                    initial="initial"
+                    animate="animate"
+                >
                     <a href="https://github.com/olawoyin1">
                         <VscGithubAlt />
                     </a>
-                    <a href="https://x.com/OlawoyinGbolah3">
+                    <motion.a variants={childVariants} href="https://x.com/OlawoyinGbolah3">
                         <FaXTwitter />
-                    </a>
-                    <a href="https://www.linkedin.com/in/olawoyin1/">
+                    </motion.a>
+                    <motion.a variants={childVariants} href="https://www.linkedin.com/in/olawoyin1/">
                         <SlSocialLinkedin />
-                    </a>
-                    <a href="https://www.upwork.com/freelancers/~01c582f3f3e721b2c9">
+                    </motion.a>
+                    <motion.a variants={childVariants} href="https://www.upwork.com/freelancers/~01c582f3f3e721b2c9">
                         <SiUpwork />
-                    </a>
-                    <a href="#li" onClick={handleToggle}>
+                    </motion.a>
+                    <motion.a variants={childVariants} href="#li" onClick={handleToggle}>
 
                         {
                             toggle ? <MdOutlineLightMode /> : <MdOutlineDarkMode />
                         }
-                    </a>
-                </div>
+                    </motion.a>
+                </motion.div>
                 <a href="#li" className='d-flex d-lg-none' onClick={handleToggle}>
 
                     {

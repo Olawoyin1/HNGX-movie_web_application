@@ -4,15 +4,15 @@ import { VscBriefcase } from "react-icons/vsc";
 import { FiFileText } from "react-icons/fi";
 import { BiSupport } from "react-icons/bi";
 import { LuAward } from "react-icons/lu";
-import { animate, motion, delay } from 'framer-motion/dom';
+import { motion } from 'framer-motion';
 
 const About = () => {
 
 
-    const mainVariant = {
+    const boxVariant = {
         initial : {
           // x : width > 0 ? -100 : "0",
-          x : -100,
+          x : 100,
           opacity : 0
         },
         animate : {
@@ -20,25 +20,33 @@ const About = () => {
           x: 0,
           transition : {
             duration: 0.5,
-            staggerChildren : 0.7
+            staggerChildren : 0.7,
+            when : "beforeChildren",
           } , 
         }
       }
   
       const transition = { duration: 0.5, ease: "easeInOut", type : "tween" };
 
-      const bigVar = {
+      const boxChild = {
         initial : {
           // x : width > 0 ? -100 : "0",
-          x : -100,
+          x : 100,
           opacity : 0
         },
         animate : {
           opacity : 1,
           x: 0,
-          transition
+          transition : {
+            duration: 0.5,
+            staggerChildren : 0.7,
+            when : "beforeChildren",
+          } , 
         }
       }
+      
+     
+
 
       const aboutVariant = {
 
@@ -73,7 +81,7 @@ const About = () => {
 
 
   return (
-    <div className='about-section py-4'>
+    <motion.div className='about-section py-4'>
         <div className="container2">
             <div className="sec-header mb-4 text-center ">
                 <h2 className="text-bold">About Me</h2>
@@ -86,24 +94,29 @@ const About = () => {
                         <img src="../../Images/sec.jpeg" className='img-fluid' alt="" />
                     </div>
                 </div>
-                <div className="col-lg-6 p-lg-2 mt-3 mt-lg-0">
-                    <div className="grid gap-2 gap-lg-3 m-0">
-                        <div className="box rounded shadow-sm bg-white text-center d-flex flex-column align-items-center justify-content-center gap-2 p-2 p-lg-3">
+                <motion.div  variants={aboutVariant} className="col-lg-6 p-lg-2 mt-3 mt-lg-0">
+                    <motion.div 
+                      className="grid gap-2 gap-lg-3 m-0"
+                      variants={boxVariant}
+                      initial="initial"
+                      whileInView="animate"
+                    >
+                        <motion.div variants={boxChild} className="box rounded shadow-sm bg-white text-center d-flex flex-column align-items-center justify-content-center gap-2 p-2 p-lg-3">
                             <LuAward size={24} />
                             <h6 className='text-bold'>Experience</h6>
                             <small className='text-muted'>3 Years Working</small>
-                        </div>
-                        <div className="box rounded shadow-sm bg-white text-center d-flex flex-column align-items-center justify-content-center gap-2 p-2 p-lg-3">
+                        </motion.div>
+                        <motion.div variants={boxChild} className="box rounded shadow-sm bg-white text-center d-flex flex-column align-items-center justify-content-center gap-2 p-2 p-lg-3">
                             <VscBriefcase size={24} />
                             <h6 className='text-bold'>Completed</h6>
                             <small className='text-muted'>20+ Project</small>
-                        </div>
-                        <div className="box rounded shadow-sm bg-white text-center d-flex flex-column align-items-center justify-content-center gap-2 p-2 p-lg-3">
+                        </motion.div>
+                        <motion.div variants={boxChild} className="box rounded shadow-sm bg-white text-center d-flex flex-column align-items-center justify-content-center gap-2 p-2 p-lg-3">
                             <BiSupport size={24} />
                             <h6 className='text-bold'>Support</h6>
                             <small className='text-muted'>Online 24/7</small>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
                     <div className="me my-4">
                         <p className='lead'>My name is Olawoyin Yusuf, and for the past 3 years, I’ve dedicated myself to the craft of software engineering. My passion lies in building software that not only meets the needs of users but also exceeds their expectations.  <br /><br />
                             I’m skilled in technologies like React.js, C Programming, TypeScript, Python, and APIs, which have enabled me to work on a variety of projects, each with its unique challenges and learning opportunities. I enjoy being part of a team where collaboration and continuous improvement are the norms, as I believe that’s where the best ideas and solutions come from. I’m excited to find a new opportunity where I can apply my skills, learn new things, and help create software that truly makes a difference.</p>
@@ -112,10 +125,10 @@ const About = () => {
                         <p>Download CV</p>
                         <FiFileText size={20} />
                     </a>
-                </div>
+                </motion.div>
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 
