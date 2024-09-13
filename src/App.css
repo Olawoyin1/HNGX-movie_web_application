@@ -12,6 +12,7 @@
   list-style-type: none;
   text-decoration: none !important;
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 
