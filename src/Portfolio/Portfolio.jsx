@@ -2,8 +2,48 @@ import React, { useState } from 'react'
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { AiOutlineReload } from "react-icons/ai";
 import Project from './data';
+import { motion } from 'framer-motion';
+
 
 const Portfolio = () => {
+
+
+  const boxVariant = {
+    initial : {
+      // x : width > 0 ? -100 : "0",
+      x : 100,
+      opacity : 0
+    },
+    animate : {
+      opacity : 1,
+      x: 0,
+      transition : {
+        duration: 0.5,
+        staggerChildren : 0.7,
+        when : "beforeChildren",
+      } , 
+    }
+  }
+
+  const transition = { duration: 0.5, ease: "easeInOut", type : "tween" };
+
+  const boxChild = {
+    initial : {
+      // x : width > 0 ? -100 : "0",
+      x : 100,
+      opacity : 0
+    },
+    animate : {
+      opacity : 1,
+      x: 0,
+      transition : {
+        duration: 0.5,
+        staggerChildren : 0.7,
+        when : "beforeChildren",
+      } , 
+    }
+  }
+  
 
     const [visible, setVisible] = useState(3)
 
@@ -12,18 +52,21 @@ const Portfolio = () => {
       setVisible(prevState => prevState + 3)
     }
   return (
-    <div className='py-4' id='portfolio'>
+    <motion.div className='py-4' id='portfolio'>
       <div className="container2">
             <div className="sec-header mb-4 text-center ">
               <h2 className="text-bold">Portfolio</h2>
               <p className="about-text text-muted">My Recent Works</p>
             </div>
-            <div className="grid1   m-0 ">
+            <motion.div  
+              className="grid1   m-0 "
+            >
 
               {
                 Project.slice(0, visible).map((item) =>{
                   return(
-                    <div key={item.id} className='box item2 bg-white shadow-sm'>
+                    
+                    <motion.div  key={item.id} className='box item2 bg-white shadow-sm'>
                       <div className="image">
                         <img src={item.image} alt="" />
                       </div>
@@ -32,14 +75,14 @@ const Portfolio = () => {
                         <small  className='text-muted'>{item.desc}</small>
                         <a href={item.link}>View <IoIosArrowRoundForward /></a>
                       </div>
-                    </div>
+                    </motion.div>
                   )
                 })
               }
 
 
 
-            </div>
+            </motion.div>
             <div className="sec-header my-4 text-center ">
               <button onClick={handleVisible} className="works  mx-auto">
                   <p>Load More</p>
@@ -48,7 +91,7 @@ const Portfolio = () => {
             </div>
             
       </div>
-    </div>
+    </motion.div>
   )
 }
 
