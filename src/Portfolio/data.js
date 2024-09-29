@@ -8,6 +8,7 @@ const Project = [
         language: ""
         
     },
+    
     {
         id: 1,
         name: "Manage Landing Page",
@@ -32,6 +33,15 @@ const Project = [
         link : "https://olawoyin1.netlify.app/",
         image: "../../Images/portfolio.png",
         desc: "Portfolio Website created with React.js and framer Motion",
+        language: ""
+        
+    },
+    {
+        id: 1,
+        name: "My Blog",
+        link : "https://olawoyin-blog.netlify.app/",
+        image: "../../Images/blog.jpeg",
+        desc: "Blog Website Created with ReactJs and Bootstrap",
         language: ""
         
     },

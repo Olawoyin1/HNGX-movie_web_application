@@ -12,9 +12,13 @@
   list-style-type: none;
   text-decoration: none !important;
   scroll-behavior: smooth;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
+
+div{
+  overflow: hidden !important;
+}
 
 
 button{
