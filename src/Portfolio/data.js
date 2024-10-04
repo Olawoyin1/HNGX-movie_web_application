@@ -8,6 +8,15 @@ const Project = [
         language: ""
         
     },
+    {
+        id: 1,
+        name: "E-commerce Website",
+        link : "https://olawoyin-ecommerce.netlify.app/",
+        image: "../../Images/e-commerce.jpeg",
+        desc: "User friendly E-commerce website created with Reactjs, Bootsrtap, Framer Motion.",
+        language: ""
+        
+    },
     
     {
         id: 1,
